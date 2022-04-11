@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Generador de Código QR</title>
+		<link rel="shortcut icon" href="img/747639.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="estilos.css" />
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+		<script defer src="app.js"></script>
+		<link rel="stylesheet" href="v2.css">
+		<link rel="stylesheet" href="estilo.css">
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+	
+			#header {
+				margin: auto;
+				width: 500px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+	
+			ul,
+			ol {
+				list-style: none;
+			}
+	
+			.nav>li {
+				float: left;
+			}
+	
+			.nav li a {
+				background-color: #424242;
+				color: #fff;
+				text-decoration: none;
+				padding: 10px 12px;
+				display: block;
+			}
+	
+			.nav li a:hover {
+				background-color: #424242;
+			}
+	
+			.nav li ul {
+				display: none;
+				position: absolute;
+			/*	min-width: 140px;*/
+			}
+	
+			.nav li:hover>ul {
+				display: block;
+			}
+	
+			.nav li ul li {
+				position: relative;
+			}
+	
+			.nav li ul li ul {
+				/*right: -140px;*/
+				top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		<header role="banner">
+			
+			<div class="container">
+				<img src="img/747639.png" style="border-radius: 20%;" class="LBU bg-transparent h-10 w-10 overflow-hidden">
+				<span class="text-white2 JB">Generador de Código QR</span>
+				
+				
+				<nav class="menu" id="show-menu">
+					<ul>
+						
+						<li><a href="https://jailbreak-update.github.io/Password-Generator/" target="_blank"><span class="icon-whatsapp"></span>Password Generator</a></li>
+						<li><a href="https://twitter.com/AriRubDam"><span class="icon-database"></span>Twitter @AriRubDam</a></li>
+						
+					</ul>
+				</nav>
+			</div>
+	
+			<div id="icon-menu">
+				<i class="fas fa-bars"></i>
+			</div>
+	
+		</header>
+
+
+		<div class="contenedor">
+			<form action="" id="formulario" class="formulario">
+
+				<section id="publicaciones">
+					<article class="post">
+						<a href="" class="enlace-post">
+							<h2 class="titulo-post">Escribe el texto o URL</h2>
+					 </a>
+						 
+						 <p>
+							<input type="text" id="link" placeholder="texto"/>
+						 </p>
+						 <p class="parrafo-post">
+					<a href="https://jailbreak-update.github.io/" class="JBU" target="_blank" rel="noopener noreferrer">Jailbreak-Update</a> | <span class="SW">School World</span> | <a href="https://arirub-music.github.io/" class="AM" target="_blank" rel="noopener noreferrer">Arirub Music</a>
+						 </p>
+						<br>
+						
+						</article>
+					 
+				</section>
+
+
+				
+				<button class="btn">Generar QR</button>
+			</form>
+
+			<div id="contenedorQR" class="contenedorQR"></div>
+			<img src="img/1500x500 (1).jpg" alt="ban">
+		</div>
+
+		
+	</body>
+</html>
